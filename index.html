@@ -1,0 +1,187 @@
+<!DOCTYPE html><html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Шымкент су қоймалары</title><style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: white;
+  overflow-x: hidden;
+}
+
+/* Abstract blurred background */
+.bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.5;
+  animation: float 10s infinite ease-in-out;
+}
+
+.shape1 { background: #4fc3f7; width: 300px; height: 300px; top: 10%; left: 10%; }
+.shape2 { background: #81d4fa; width: 400px; height: 400px; top: 50%; left: 60%; }
+.shape3 { background: #29b6f6; width: 250px; height: 250px; top: 70%; left: 20%; }
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
+.q {
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(15px);
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  animation: fadeInUp 0.6s ease;
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+button {
+  display: block;
+  margin: 25px auto;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 12px;
+  background: #0288d1;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: #0277bd;
+}
+
+#result {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 20px;
+  animation: fadeIn 1s ease;
+}
+
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 14px;
+}
+
+footer img {
+  width: 60px;
+  display: block;
+  margin: 10px auto;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+</style></head>
+<body><div class="bg">
+  <div class="shape shape1"></div>
+  <div class="shape shape2"></div>
+  <div class="shape shape3"></div>
+</div><div class="container">
+<h1>Шымкент су қоймалары тесті</h1><form id="quiz"><div class="q"><p>1. Бадам су қоймасының негізгі қызметі:</p>
+<label><input type="radio" name="q1" value="A"> A) Тек демалыс</label>
+<label><input type="radio" name="q1" value="B"> B) Суару</label>
+<label><input type="radio" name="q1" value="C"> C) Кешенді</label>
+<label><input type="radio" name="q1" value="D"> D) Өндіріс</label></div><div class="q"><p>2. Қалаға жақын орналасу артықшылығы:</p>
+<label><input type="radio" name="q2" value="A"> A) Су жеткізу</label>
+<label><input type="radio" name="q2" value="B"> B) Кеме</label>
+<label><input type="radio" name="q2" value="C"> C) Энергия</label>
+<label><input type="radio" name="q2" value="D"> D) Климат</label></div><div class="q"><p>3. Су деңгейіне әсер ететін фактор:</p>
+<label><input type="radio" name="q3" value="A"> A) Жел</label>
+<label><input type="radio" name="q3" value="B"> B) Халық</label>
+<label><input type="radio" name="q3" value="C"> C) Көлік</label>
+<label><input type="radio" name="q3" value="D"> D) Жауын-шашын</label></div><div class="q"><p>4. Шардара су қоймасының маңызы:</p>
+<label><input type="radio" name="q4" value="A"> A) Туризм</label>
+<label><input type="radio" name="q4" value="B"> B) Су реттеу</label>
+<label><input type="radio" name="q4" value="C"> C) Балық аулау</label>
+<label><input type="radio" name="q4" value="D"> D) Өндіріс</label></div><div class="q"><p>5. Су азайса не зардап шегеді:</p>
+<label><input type="radio" name="q5" value="A"> A) Егіншілік</label>
+<label><input type="radio" name="q5" value="B"> B) Туризм</label>
+<label><input type="radio" name="q5" value="C"> C) Көлік</label>
+<label><input type="radio" name="q5" value="D"> D) Байланыс</label></div><div class="q"><p>6. Ластану салдары:</p>
+<label><input type="radio" name="q6" value="A"> A) Түс өзгеру</label>
+<label><input type="radio" name="q6" value="B"> B) Экожүйе бұзылуы</label>
+<label><input type="radio" name="q6" value="C"> C) Иіс</label>
+<label><input type="radio" name="q6" value="D"> D) Температура</label></div><div class="q"><p>7. Тұрақты даму қағидасы:</p>
+<label><input type="radio" name="q7" value="A"> A) Үнемдеу</label>
+<label><input type="radio" name="q7" value="B"> B) Шексіз қолдану</label>
+<label><input type="radio" name="q7" value="C"> C) Тек өндіріс</label>
+<label><input type="radio" name="q7" value="D"> D) Жою</label></div><div class="q"><p>8. Құрғақ климат әсері:</p>
+<label><input type="radio" name="q8" value="A"> A) Көтеріледі</label>
+<label><input type="radio" name="q8" value="B"> B) Өзгермейді</label>
+<label><input type="radio" name="q8" value="C"> C) Төмендейді</label>
+<label><input type="radio" name="q8" value="D"> D) Өзен көбейеді</label></div><div class="q"><p>9. Су басқару принципі:</p>
+<label><input type="radio" name="q9" value="A"> A) Бір сала</label>
+<label><input type="radio" name="q9" value="B"> B) Кешенді басқару</label>
+<label><input type="radio" name="q9" value="C"> C) Тек бөгет</label>
+<label><input type="radio" name="q9" value="D"> D) Қысқарту</label></div><div class="q"><p>10. Су қауіпсіздігі жолы:</p>
+<label><input type="radio" name="q10" value="A"> A) Арттыру</label>
+<label><input type="radio" name="q10" value="B"> B) Тиімді басқару</label>
+<label><input type="radio" name="q10" value="C"> C) Жою</label>
+<label><input type="radio" name="q10" value="D"> D) Өзгерту</label></div><button type="button" onclick="checkQuiz()">Тексеру</button>
+
+</form><h2 id="result"></h2><footer>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Sustainable_Development_Goal_6CleanWaterSanitation.svg/512px-Sustainable_Development_Goal_6CleanWaterSanitation.svg.png">
+Тұрақты даму мақсаты №6 — Таза су және санитария
+</footer></div><script>
+function checkQuiz() {
+  let score = 0;
+
+  const answers = {
+    q1: "C", q2: "A", q3: "D", q4: "B", q5: "A",
+    q6: "B", q7: "A", q8: "C", q9: "B", q10: "B"
+  };
+
+  for (let key in answers) {
+    let selected = document.querySelector(`input[name=${key}]:checked`);
+    if (selected && selected.value === answers[key]) score++;
+  }
+
+  let text = "";
+
+  if (score >= 8) text = "🔥 Өте жақсы нәтиже: ";
+  else if (score >= 5) text = "👍 Жақсы нәтиже: ";
+  else text = "😅 Қайта дайындал: ";
+
+  document.getElementById("result").innerText = text + score + "/10";
+}
+</script></body>
+</html>
