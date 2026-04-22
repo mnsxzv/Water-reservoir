@@ -1,1 +1,55 @@
- ===== style.css ===== body { margin:0; font-family: "Times New Roman", serif; background:white; } .bg { position:fixed; width:100%; height:100%; z-index:-1; } .shape { position:absolute; border-radius:50%; filter:blur(100px); opacity:0.5; animation:float 10s infinite; } .shape1 { background:#4fc3f7; width:300px; height:300px; top:10%; left:10%; } .shape2 { background:#81d4fa; width:400px; height:400px; top:50%; left:60%; } .shape3 { background:#29b6f6; width:250px; height:250px; top:70%; left:20%; } @keyframes float {0%{transform:translateY(0);}50%{transform:translateY(-20px);}100%{transform:translateY(0);}} .container { max-width:900px; margin:auto; padding:20px; } .q { background:rgba(255,255,255,0.25); backdrop-filter:blur(15px); padding:20px; border-radius:15px; box-shadow:0 8px 32px rgba(0,0,0,0.1); } button { margin-top:15px; padding:10px 20px; border:none; border-radius:10px; background:#0288d1; color:white; cursor:pointer; } .correct { color:green; } .wrong { color:red; } footer { text-align:center; margin-top:40px; } footer img { width:80px; }
+
+body {
+  margin:0;
+  font-family:"Times New Roman", serif;
+  background:white;
+}
+
+.bg { position:fixed; width:100%; height:100%; z-index:-1; }
+.shape { position:absolute; border-radius:50%; filter:blur(100px); opacity:0.5; animation:float 10s infinite; }
+.shape1 { background:#4fc3f7; width:300px; height:300px; top:10%; left:10%; }
+.shape2 { background:#81d4fa; width:400px; height:400px; top:50%; left:60%; }
+.shape3 { background:#29b6f6; width:250px; height:250px; top:70%; left:20%; }
+
+@keyframes float {
+0%{transform:translateY(0);} 
+50%{transform:translateY(-20px);} 
+100%{transform:translateY(0);} }
+
+.container { max-width:900px; margin:auto; padding:20px; }
+
+.q {
+  background:rgba(255,255,255,0.25);
+  backdrop-filter:blur(15px);
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 8px 32px rgba(0,0,0,0.1);
+}
+
+button {
+  display:block;
+  margin:8px 0;
+  padding:10px;
+  border:none;
+  border-radius:10px;
+  background:#0288d1;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover { transform:scale(1.03); }
+
+.correctBtn { background:green !important; }
+.wrongBtn { background:red !important; }
+
+#progress {
+  text-align:center;
+  margin-bottom:10px;
+  font-weight:bold;
+}
+
+#result { text-align:center; font-size:22px; }
+
+footer { text-align:center; margin-top:40px; }
+footer img { width:80px; }
